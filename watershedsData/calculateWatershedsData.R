@@ -124,7 +124,7 @@ colnames(w)<-c("W")
 for (i in c(1:nrow(sub@data))) {
   xy<-sub@polygons[[i]]@Polygons[[1]]@coords
   bb <- getMinWidthBBox(xy)#以最小寬度的長方形
-  w[i]<-bb$minWidth/2#其實不太懂
+  w[i]<-bb$minWidth/2
 }
 w<-as.data.frame(w)
 dbfdata=cbind(sub@data,w)
