@@ -1,0 +1,16 @@
+Warning message:
+In .local(x, ...) : .prj file is missing
+座標系統缺失
+
+Warning messages:
+1: In OGRSpatialRef(dsn, layer, morphFromESRI = morphFromESRI, dumpSRS = dumpSRS,  :
+  Discarded datum Taiwan_Datum_1997 in Proj4 definition: +proj=tmerc +lat_0=0 +lon_0=121 +k=0.9999 +x_0=250000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
+捨棄TWD97座標系統
+2: In rgdal::readOGR(dirname(x), fn, stringsAsFactors = stringsAsFactors,  :
+  Z-dimension discarded
+捨棄Z軸的值
+
+Warning message:
+In showSRID(uprojargs, format = "PROJ", multiline = "NO", prefer_proj = prefer_proj) :
+  Discarded datum Unknown based on GRS80 ellipsoid in Proj4 definition
+捨棄座標系統
